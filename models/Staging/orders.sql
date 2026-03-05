@@ -3,10 +3,10 @@
 WITH tbl AS (
 
 SELECT
-    id INT,
-    user_id INT,
-    order_date DATE,
-    status STRING
+    id ,
+    user_id,
+    order_date,
+    status 
 FROM {{ source('source_table_name','RAW_ORDERS_DATA') }}
 
 )
